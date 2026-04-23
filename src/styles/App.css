@@ -40,7 +40,9 @@
 }
 
 .logo {
-  height: 150px;
+  max-width: 100%;
+  height: auto;
+  width: 180px;
   margin: auto;
   margin-bottom: 30px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
@@ -94,6 +96,7 @@
   gap: 40px;
   margin-bottom: 50px;
   color: #94a3b8;
+  flex-wrap: wrap;
 }
 
 .icon-item {
@@ -152,5 +155,42 @@
   100% {
     transform: scale(0.95);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-proximamente {
+    padding: 40px 20px; /* Más espacio arriba y abajo */
+    justify-content: flex-start; /* Evita que el contenido choque con el footer */
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 1.8rem; /* Tamaño más cómodo para leer en vertical */
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .services-icons {
+    gap: 20px; /* Reducimos el espacio entre iconos */
+  }
+
+  .btn-contact {
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+  }
+
+  .footer {
+    position: relative; /* Ya no flota sobre el contenido */
+    margin-top: 50px;
+    bottom: 0;
   }
 }

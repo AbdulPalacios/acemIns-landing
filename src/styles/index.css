@@ -1,9 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--bg-light);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: var(--dark-slate);
+}
+
+:root {
+  --primary-blue: #2563eb; /* Azul de tecnología*/
+  --dark-slate: #0f172a; /* Azul marino profundo*/
+  --text-muted: #64748b; /* Gris para texto muteado*/
+  --bg-light: #f8fafc; /* Gris claro para el fondo*/
+
+  --beige: #f5efeb; /* Beige*/
+  --white: #ffffff; /* Blanco*/
+  --navy: #2f4156; /* Azul marino*/
+  --sky-blue: #c8d9e6; /* Azul cielo */
+
+  --ancho-item: 90px;
 }

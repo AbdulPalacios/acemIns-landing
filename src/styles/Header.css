@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--navy);
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 15vw;
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--sky-blue);
+  font-weight: 500;
+  font-size: 0.93rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  color: var(--bg-light);
+  transform: translateY(-5px);
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-times,
+.fa-bars {
+  color: var(--sky-blue);
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 40vw;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu i {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu.open i {
+    transform: rotate(90deg);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--navy);
+    padding: 1.4rem 0;
+    gap: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+  .nav-links.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.show li {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-links.show li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .nav-links.show li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .nav-links.show li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .nav-links.show li:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+  .nav-links.show li:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+}

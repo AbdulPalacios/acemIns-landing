@@ -1,0 +1,38 @@
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  background-color: var(--white);
+}
+
+.carousel-track {
+  display: flex;
+  width: calc(var(--ancho-item) * var(--cantidad-imagenes) * 2);
+  animation: scrollInfinito 40s linear infinite;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel-item img {
+  height: auto;
+  width: var(--ancho-item);
+  object-fit: contain;
+}
+
+@keyframes scrollInfinito {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(var(--ancho-item) * var(--cantidad-imagenes) * -2)
+    );
+  }
+}

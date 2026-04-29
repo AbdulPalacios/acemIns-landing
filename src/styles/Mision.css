@@ -1,0 +1,71 @@
+.mision-vision {
+  padding: 100px 20px;
+  background-color: var(--white);
+}
+
+.mision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.pilar-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: var(--bg-light);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pilar-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+.pilar-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pilar-icon i {
+  color: white;
+  font-size: 2rem;
+}
+
+.pilar-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pilar-card p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .mision-vision {
+    padding: 60px 20px;
+  }
+
+  .pilar-card {
+    padding: 30px 20px;
+  }
+}

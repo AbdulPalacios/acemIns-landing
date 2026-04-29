@@ -17,7 +17,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="hero">
+    <section className="hero" id="inicio">
       <div className="hero-content">
         <h1 className="hero-title">Soluciones Integrales de Ingeniería</h1>
 
@@ -39,6 +39,10 @@ const Hero = () => {
           "No hay secretos para el éxito. Es el resultado de la preparación, el
           trabajo duro y el aprendizaje de los fracasos."
         </p>
+
+        <button className="cta-button" id="#">
+          Conozca Nuestros Servicios
+        </button>
       </div>
     </section>
   );

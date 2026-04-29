@@ -20,6 +20,11 @@ h3 {
   color: var(--dark-slate);
 }
 
+a {
+  -webkit-tap-highlight-color: transparent; /* Elimina el recuadro azul en movieles */
+  outline: none;
+}
+
 :root {
   --primary-blue: #2563eb; /* Azul de tecnología*/
   --dark-slate: #0f172a; /* Azul marino profundo*/

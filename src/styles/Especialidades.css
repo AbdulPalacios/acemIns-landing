@@ -1,0 +1,111 @@
+.especialidades {
+  padding: 100px 20px;
+  background-color: var(--bg-light);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  color: var(--primary-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: var(--dark-slate);
+  margin: 10px 0;
+}
+
+.u-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-blue);
+  margin: 0 auto;
+}
+
+.especialidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.especialidad-card {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.especialidad-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+}
+
+.especialidad-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-blue);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.especialidad-card:hover::before {
+  transform: scaleX(1);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--sky-blue);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.card-icon i {
+  font-size: 1.8rem;
+  color: var(--primary-blue);
+}
+
+.especialidad-card h3 {
+  color: var(--dark-slate);
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.especialidad-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.especialidad-card li {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.especialidad-card li i {
+  color: var(--primary-blue);
+  font-size: 0.8rem;
+}

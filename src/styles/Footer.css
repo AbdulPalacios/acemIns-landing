@@ -1,0 +1,152 @@
+.main-footer {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 80px 20px 20px;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: var(--sky-blue);
+  font-size: 1rem;
+  line-height: 1.8;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.footer-section i {
+  color: var(--bg-light);
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.slogan-placeholder {
+  margin-bottom: 20px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.slogan-placeholder img {
+  width: 20vw;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+.slogan-phrase {
+  font-style: italic;
+  font-weight: 600;
+  max-width: 300px;
+  margin: auto;
+}
+
+.footer-info span {
+  display: block;
+}
+
+.contact-name {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-email {
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+  color: var(--primary-blue);
+}
+
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  display: inline-flex;
+}
+
+.social-links i {
+  display: inline-block;
+  font-size: 1.4rem;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.social-links i:hover {
+  color: var(--primary-blue);
+  transform: translateY(-8px);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  text-align: center;
+  color: var(--sky-blue);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ubication-text {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .slogan-placeholder img {
+    width: 50vw;
+  }
+
+  .main-footer {
+    padding: 60px 20px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    justify-content: center;
+  }
+
+  .slogan-placeholder {
+    justify-content: center;
+  }
+
+  .social-links i {
+    font-size: 1.7rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

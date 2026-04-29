@@ -1,0 +1,99 @@
+.about-us {
+  background-color: var(--bg-light);
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-tag {
+  color: var(--primary-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.about-title {
+  color: var(--dark-slate);
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+.about-intro {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.about-card {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-bottom-color: var(--primary-blue);
+}
+
+.icon-box {
+  background-color: var(--sky-blue);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.icon-box i {
+  color: var(--navy);
+  font-size: 1.5rem;
+}
+
+.about-card h4 {
+  color: var(--dark-slate);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.about-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-footer {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.about-footer i {
+  margin-right: 10px;
+  color: var(--sky-blue);
+}

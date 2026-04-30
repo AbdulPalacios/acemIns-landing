@@ -24,7 +24,14 @@
 .about-title {
   color: var(--dark-slate);
   font-size: 2.5rem;
-  margin-top: 10px;
+  margin: 10px 0;
+}
+
+.u-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-blue);
+  margin: 0 auto;
 }
 
 .about-intro {

@@ -39,6 +39,10 @@ const Footer = () => {
             <i className="fas fa-envelope"></i>
             alejandro.coyotzi@acemins.com
           </a>
+          <a href="mailto:administracion@acemins.com" className="contact-email">
+            <i className="fas fa-envelope"></i>
+            administracion@acemins.com
+          </a>
         </div>
         <div className="footer-section">
           <h4>Síguenos</h4>

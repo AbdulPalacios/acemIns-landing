@@ -30,6 +30,7 @@ const AboutUs = () => {
         <header className="about-header">
           <span className="about-tag">Trayectoria y Confianza</span>
           <h2 className="about-title">ACEM INS S.A. de C.V.</h2>
+          <div className="u-line"></div>
           <p className="about-intro">
             Empresa tlaxcalteca con más de{" "}
             <strong>20 años de experiencia</strong>. Acompañamos a la industria

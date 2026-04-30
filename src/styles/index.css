@@ -23,6 +23,8 @@ h3 {
 a {
   -webkit-tap-highlight-color: transparent; /* Elimina el recuadro azul en movieles */
   outline: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 :root {

@@ -40,9 +40,9 @@ const Hero = () => {
           trabajo duro y el aprendizaje de los fracasos."
         </p>
 
-        <button className="cta-button" id="#">
+        <a className="cta-button" href="#especialidades">
           Conozca Nuestros Servicios
-        </button>
+        </a>
       </div>
     </section>
   );

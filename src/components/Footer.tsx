@@ -32,6 +32,10 @@ const Footer = () => {
             <i className="fas fa-user-tie"></i>
             FIDEL ALEJANDRO COYOTZI HERNÁNDEZ
           </p>
+          <a href="tel:+522481019351" className="contact-link">
+            <i className="fas fa-phone-alt"></i>
+            +52 248 101 9351
+          </a>
           <a
             href="mailto:alejandro.coyotzi@acemins.com"
             className="contact-email"

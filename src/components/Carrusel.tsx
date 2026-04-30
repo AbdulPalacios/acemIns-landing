@@ -15,6 +15,7 @@ const Carrusel = () => {
       className="carousel-container"
       style={{ "--cantidad-imagenes": cantidad } as React.CSSProperties}
     >
+      <h4 className="carousel-title">Empresas que confían en nosotros</h4>
       <div className="carousel-track">
         {listaImagenes.map((ruta, index) => (
           <div className="carousel-item" key={`orig-${index}`}>

@@ -12,6 +12,17 @@
   background-color: var(--white);
 }
 
+.carousel-title {
+  text-align: center;
+  color: var(--white);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0;
+  font-weight: 600;
+  background-color: var(--navy);
+}
+
 .carousel-track {
   display: flex;
   width: calc(var(--ancho-item) * var(--cantidad-imagenes) * 2);
